@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mirror-CFE Animations</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+   <!-- text-center py-6 bg-gray-800 text-gray-100 mt-8 -->
+  <header class="text-center py-8 bg-gray-800 text-gray-100 shadow">
+    <h1 class="text-3xl font-bold">
+      Looking in the Mirror: A Faithful Counterfactual Explanation Method for Interpreting Deep Image Classification Models
+    </h1>
+    <p class="mt-2 text-lg font-semibold text-yellow-300">
+        Accepted at <strong>ICCV 2025</strong> – <a href="https://arxiv.org/abs/2509.16822" target="_blank" class="underline text-yellow-300">Paper on arXiv</a>
+    </p>
+    <p class="mt-4 text-lg">
+      Townim Faisal Chowdhury<sup>1</sup>, Vu Minh Hieu Phan<sup>1</sup>, Kewen Liao<sup>2</sup>, Nanyu Dong<sup>1</sup>, Minh-Son To<sup>3</sup>,
+      Anton van den Hengel<sup>1</sup>, Johan W. Verjans<sup>1</sup>, and Zhibin Liao<sup>1</sup>
+    </p>
+    <p class="mt-2 text-gray-100">1 Australian Institute for Machine Learning, University of Adelaide, Australia</p>
+    <p class="text-gray-100">2 Deakin University, Australia</p>
+    <p class="text-gray-100">3 Flinders University, Australia</p>
+  </header>
+
+
+  <main class="max-w-6xl mx-auto p-6 space-y-8">
+
+    <!-- Description -->
+    <div class="bg-white p-6 rounded-lg shadow text-gray-700">
+      <h2 class="text-2xl font-semibold mb-3">About These Animations</h2>
+      <p class="mb-2">
+        The following videos showcase <span class="font-medium">Mirror-CFE counterfactual explanations</span> 
+        generated across multiple datasets including <strong>Blood-MNIST (B-MNIST)</strong>, <strong>CelebA-HQ</strong>, 
+        <strong>Fashion-MNIST (FMNIST)</strong>, and <strong>MNIST</strong>.
+      </p>
+      <p>
+        Each animation visualizes how Mirror-CFE gradually transforms a source image into a counterfactual example
+        that crosses the classifier's decision boundary while preserving identity.  
+        Click a dataset section below to expand and explore the animations.
+      </p>
+    </div>
+
+    <!-- ========== BMNIST ========== -->
+    <details class="border rounded-lg bg-white p-4">
+      <summary class="cursor-pointer font-semibold text-lg">BMNIST</summary>
+      <div class="mt-4 space-y-8">
+        <h3 class="text-xl font-semibold text-gray-800 border-b pb-2">24</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <p class="font-medium mb-1 text-sm break-words">fig3_row7_lymphocyte(GT_lymphocyte)_to_erythroblast_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/bmnist/24/fig3_row7_lymphocyte(GT_lymphocyte)_to_erythroblast_correct.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 border-b pb-2">24 / additional_samples</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div><p>no12_lymphocyte(GT_lymphocyte)_to_erythroblast_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/bmnist/24/additional_samples/no12_lymphocyte(GT_lymphocyte)_to_erythroblast_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no189_erythroblast(GT_lymphocyte)_to_lymphocyte_error.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/bmnist/24/additional_samples/no189_erythroblast(GT_lymphocyte)_to_lymphocyte_error.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no33_erythroblast(GT_erythroblast)_to_lymphocyte_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/bmnist/24/additional_samples/no33_erythroblast(GT_erythroblast)_to_lymphocyte_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no5_erythroblast(GT_erythroblast)_to_lymphocyte_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/bmnist/24/additional_samples/no5_erythroblast(GT_erythroblast)_to_lymphocyte_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no69_lymphocyte(GT_lymphocyte)_to_erythroblast_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/bmnist/24/additional_samples/no69_lymphocyte(GT_lymphocyte)_to_erythroblast_correct.mp4" type="video/mp4">
+            </video></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ========== CELEBA ========== -->
+    <details class="border rounded-lg bg-white p-4">
+      <summary class="cursor-pointer font-semibold text-lg">CelebA-HQ</summary>
+      <div class="mt-4 space-y-8">
+        <h3 class="text-xl font-semibold text-gray-800 border-b pb-2">01</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div><p>fig4_bottomleft_slightly opened mouth(GT_slightly opened mouth)_to_closed mouth_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/celeba/01/fig4_bottomleft_slightly opened mouth(GT_slightly opened mouth)_to_closed mouth_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>fig4_bottomright_slightly opened mouth(GT_slightly opened mouth)_to_closed mouth_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/celeba/01/fig4_bottomright_slightly opened mouth(GT_slightly opened mouth)_to_closed mouth_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>fig4_topleft_closed mouth(GT_closed mouth)_to_slightly opened mouth_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/celeba/01/fig4_topleft_closed mouth(GT_closed mouth)_to_slightly opened mouth_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>fig4_topright_closed mouth(GT_closed mouth)_to_slightly opened mouth_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/celeba/01/fig4_topright_closed mouth(GT_closed mouth)_to_slightly opened mouth_correct.mp4" type="video/mp4">
+            </video></div>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 border-b pb-2">01 / additional_sample</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+          <div><p>no4262_closed mouth(GT_slightly opened mouth)_to_slightly opened mouth_error.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/celeba/01/additional_sample/no4262_closed mouth(GT_slightly opened mouth)_to_slightly opened mouth_error.mp4" type="video/mp4">
+            </video></div>
+          </div>
+        
+      </div>
+    </details>
+
+    <!-- ========== FMNIST ========== -->
+    <details class="border rounded-lg bg-white p-4">
+      <summary class="cursor-pointer font-semibold text-lg">Fashion-MNIST</summary>
+      <div class="mt-4 space-y-8">
+
+        <!-- 02 -->
+        <h3 class="text-xl font-semibold text-gray-800 border-b pb-2">02</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div><p>fig3_row4_T-shirt(GT_T-shirt)_to_Pullover_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/fmnist/02/fig3_row4_T-shirt(GT_T-shirt)_to_Pullover_correct.mp4" type="video/mp4">
+            </video></div>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 border-b pb-2">02 / additional_samples</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div><p>no0_Pullover(GT_Pullover)_to_T-shirt_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/fmnist/02/additional_samples/no0_Pullover(GT_Pullover)_to_T-shirt_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no100_T-shirt(GT_Pullover)_to_Pullover_error.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/fmnist/02/additional_samples/no100_T-shirt(GT_Pullover)_to_Pullover_error.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no10_Pullover(GT_Pullover)_to_T-shirt_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/fmnist/02/additional_samples/no10_Pullover(GT_Pullover)_to_T-shirt_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no27_T-shirt(GT_T-shirt)_to_Pullover_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/fmnist/02/additional_samples/no27_T-shirt(GT_T-shirt)_to_Pullover_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no6_Pullover(GT_Pullover)_to_T-shirt_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/fmnist/02/additional_samples/no6_Pullover(GT_Pullover)_to_T-shirt_correct.mp4" type="video/mp4">
+            </video></div>
+        </div>
+
+        <!-- 46 -->
+        <h3 class="text-xl font-semibold text-gray-800 border-b pb-2">46</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div><p>fig3_row5_Coat(GT_Coat)_to_Shirt_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/fmnist/46/fig3_row5_Coat(GT_Coat)_to_Shirt_correct.mp4" type="video/mp4">
+            </video></div>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 border-b pb-2">46 / additional_samples</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div><p>no18_Shirt(GT_Shirt)_to_Coat_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/fmnist/46/additional_samples/no18_Shirt(GT_Shirt)_to_Coat_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no31_Coat(GT_Coat)_to_Shirt_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/fmnist/46/additional_samples/no31_Coat(GT_Coat)_to_Shirt_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no4_Coat(GT_Coat)_to_Shirt_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/fmnist/46/additional_samples/no4_Coat(GT_Coat)_to_Shirt_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no53_Shirt(GT_Shirt)_to_Coat_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/fmnist/46/additional_samples/no53_Shirt(GT_Shirt)_to_Coat_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no5_Shirt(GT_Coat)_to_Coat_error.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/fmnist/46/additional_samples/no5_Shirt(GT_Coat)_to_Coat_error.mp4" type="video/mp4">
+            </video></div>
+        </div>
+
+        <!-- 79 -->
+        <h3 class="text-xl font-semibold text-gray-800 border-b pb-2">79</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div><p>fig3_row6_Sneaker(GT_Sneaker)_to_Ankle boot_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/fmnist/79/fig3_row6_Sneaker(GT_Sneaker)_to_Ankle boot_correct.mp4" type="video/mp4">
+            </video></div>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 border-b pb-2">79 / additional_samples</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div><p>no0_Ankle boot(GT_Ankle boot)_to_Sneaker_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/fmnist/79/additional_samples/no0_Ankle boot(GT_Ankle boot)_to_Sneaker_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no274_Sneaker(GT_Ankle boot)_to_Ankle boot_error.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/fmnist/79/additional_samples/no274_Sneaker(GT_Ankle boot)_to_Ankle boot_error.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no36_Ankle boot(GT_Ankle boot)_to_Sneaker_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/fmnist/79/additional_samples/no36_Ankle boot(GT_Ankle boot)_to_Sneaker_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no38_Ankle boot(GT_Ankle boot)_to_Sneaker_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/fmnist/79/additional_samples/no38_Ankle boot(GT_Ankle boot)_to_Sneaker_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no6_Sneaker(GT_Sneaker)_to_Ankle boot_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/fmnist/79/additional_samples/no6_Sneaker(GT_Sneaker)_to_Ankle boot_correct.mp4" type="video/mp4">
+            </video></div>
+        </div>
+
+      </div>
+    </details>
+
+    <!-- ========== MNIST ========== -->
+    <details class="border rounded-lg bg-white p-4">
+      <summary class="cursor-pointer font-semibold text-lg">MNIST</summary>
+      <div class="mt-4 space-y-8">
+
+        <!-- 38 -->
+        <h3 class="text-xl font-semibold text-gray-800 border-b pb-2">38</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div><p>fig3_row1_8(GT_8)_to_3_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/mnist/38/fig3_row1_8(GT_8)_to_3_correct.mp4" type="video/mp4">
+            </video></div>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 border-b pb-2">38 / additional_samples</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div><p>no15_8(GT_8)_to_3_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/mnist/38/additional_samples/no15_8(GT_8)_to_3_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no17_3(GT_3)_to_8_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/mnist/38/additional_samples/no17_3(GT_3)_to_8_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no185_5(GT_3)_to_8_error.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/mnist/38/additional_samples/no185_5(GT_3)_to_8_error.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no22_8(GT_8)_to_3_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/mnist/38/additional_samples/no22_8(GT_8)_to_3_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no8_3(GT_3)_to_8_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/mnist/38/additional_samples/no8_3(GT_3)_to_8_correct.mp4" type="video/mp4">
+            </video></div>
+        </div>
+
+        <!-- 49 -->
+        <h3 class="text-xl font-semibold text-gray-800 border-b pb-2">49</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div><p>fig3_row2_9(GT_9)_to_4_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/mnist/49/fig3_row2_9(GT_9)_to_4_correct.mp4" type="video/mp4">
+            </video></div>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 border-b pb-2">49 / additional_samples</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div><p>no10_4(GT_4)_to_9_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/mnist/49/additional_samples/no10_4(GT_4)_to_9_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no1_4(GT_4)_to_9_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/mnist/49/additional_samples/no1_4(GT_4)_to_9_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no31_9(GT_4)_to_4_error.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/mnist/49/additional_samples/no31_9(GT_4)_to_4_error.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no7_9(GT_4)_to_4_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/mnist/49/additional_samples/no7_9(GT_4)_to_4_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no9_4(GT_4)_to_9_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/mnist/49/additional_samples/no9_4(GT_4)_to_9_correct.mp4" type="video/mp4">
+            </video></div>
+        </div>
+
+        <!-- 56 -->
+        <h3 class="text-xl font-semibold text-gray-800 border-b pb-2">56</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div><p>fig3_row3_6(GT_6)_to_5_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/mnist/56/fig3_row3_6(GT_6)_to_5_correct.mp4" type="video/mp4">
+            </video></div>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 border-b pb-2">56 / additional_samples</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div><p>no10_6(GT_6)_to_5_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/mnist/56/additional_sample/no10_6(GT_6)_to_5_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no11_5(GT_5)_to_6_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/mnist/56/additional_sample/no11_5(GT_5)_to_6_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no304_3(GT_5)_to_6_error.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/mnist/56/additional_sample/no304_3(GT_5)_to_6_error.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no5_5(GT_5)_to_6_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/mnist/56/additional_sample/no5_5(GT_5)_to_6_correct.mp4" type="video/mp4">
+            </video></div>
+          <div><p>no6_5(GT_5)_to_6_correct.mp4</p>
+            <video controls preload="metadata" class="w-full rounded shadow">
+              <source src="animations/mnist/56/additional_sample/no6_5(GT_5)_to_6_correct.mp4" type="video/mp4">
+            </video></div>
+        </div>
+
+      </div>
+    </details>
+
+  </main>
+
+  <footer class="text-center py-6 bg-gray-800 text-gray-100 mt-8">
+    © 2025 Mirror-CFE | Australian Institute for Machine Learning
+  </footer>
+</body>
+</html>
