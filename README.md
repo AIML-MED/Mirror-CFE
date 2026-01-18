@@ -6,7 +6,7 @@ Created by Townim Faisal Chowdhury, Vu Minh Hieu Phan, Kewen Liao, Nanyu Dong, M
 
 Animation files mentioned in the supplementary are in [here](suppelementary/animations). You can check our [demo page](https://aiml-med.github.io/Mirror-CFE/) as well to view the animations.
 
-Code will be available soon.
+Mirror-CFE generation code: https://gist.github.com/townim-faisal/3f1c6a3001d76755ca96370f2dd70f2d
 
 ## Citation
 
